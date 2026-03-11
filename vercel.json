@@ -1,14 +1,4 @@
 {
   "version": 2,
-  "outputDirectory": "public",
-  "rewrites": [
-    {
-      "source": "/api/crictos_image_gen",
-      "destination": "/api/crictos_image_gen.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/public/$1"
-    }
-  ]
+  "outputDirectory": "public"
 }
