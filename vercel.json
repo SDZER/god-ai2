@@ -1,32 +1,14 @@
 {
   "version": 2,
-  "buildCommand": null,
   "outputDirectory": "public",
-  "functions": {
-    "api/zonerai_image_gen.js": {
-      "maxDuration": 120,
-      "memory": 1024
-    }
-  },
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/zonerai_image_gen",
-      "dest": "/api/zonerai_image_gen.js",
-      "methods": ["POST", "OPTIONS"]
+      "source": "/api/zonerai_image_gen",
+      "destination": "/api/zonerai_image_gen.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin",  "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, X-Requested-With" }
-      ]
+      "source": "/(.*)",
+      "destination": "/public/$1"
     }
   ]
 }
