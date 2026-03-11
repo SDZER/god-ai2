@@ -1,5 +1,5 @@
 {
-  "name": "god-ai",
+  "name": "crictos-ai-studio",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,6 @@
     "deploy": "vercel --prod"
   },
   "engines": {
-    "node": "24.x"
+    "node": "20.x"
   }
 }
