@@ -1,20 +1,12 @@
 {
-  "name": "crictos-ai-studio",
+  "name": "god-ai",
   "version": "1.0.0",
-  "description": "AI Photo Studio — Generate & edit images with Crictos AI",
   "private": true,
-  "engines": {
-    "node": ">=18.x"
-  },
   "scripts": {
     "dev": "vercel dev",
-    "deploy": "vercel --prod",
-    "deploy:preview": "vercel"
+    "deploy": "vercel --prod"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "vercel": "^37.0.0"
-  },
-  "author": "Crictos AI Studio",
-  "license": "MIT"
+  "engines": {
+    "node": "24.x"
+  }
 }
