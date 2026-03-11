@@ -3,8 +3,8 @@
   "outputDirectory": "public",
   "rewrites": [
     {
-      "source": "/api/zonerai_image_gen",
-      "destination": "/api/zonerai_image_gen.js"
+      "source": "/api/crictos_image_gen",
+      "destination": "/api/crictos_image_gen.js"
     },
     {
       "source": "/(.*)",
