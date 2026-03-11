@@ -3,16 +3,15 @@
   "buildCommand": null,
   "outputDirectory": "public",
   "functions": {
-    "api/crictos_image_gen.js": {
-      "runtime": "nodejs24.x",
+    "api/zonerai_image_gen.js": {
       "maxDuration": 120,
       "memory": 1024
     }
   },
   "routes": [
     {
-      "src": "/api/crictos_image_gen",
-      "dest": "/api/crictos_image_gen.js",
+      "src": "/api/zonerai_image_gen",
+      "dest": "/api/zonerai_image_gen.js",
       "methods": ["POST", "OPTIONS"]
     },
     {
@@ -26,7 +25,7 @@
       "headers": [
         { "key": "Access-Control-Allow-Origin",  "value": "*" },
         { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, X-Requested-With" }
       ]
     }
   ]
